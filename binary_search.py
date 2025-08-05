@@ -5,9 +5,9 @@ class Solution(object):
         :type target: int
         :rtype: int
         """
-        L,R=0,len(nums)
+        L, R = 0, len(nums)
         while L < R:
-            M=L+(R-L)/2
+            M = L + (R - L) // 2
             if target < nums[M]:
                 R = M
             elif target > nums[M]:
