@@ -11,4 +11,4 @@ class Solution:
                 stack.pop()
             else:
                 stack.append(c)
-        return ''.join(stack)   #'分隔符'.join(可迭代的字符串) 返回字符串
+        return ''.join(stack)   #'分隔符'.join(可迭代的字符串) 返回字符串 （可迭代的字符串中元素必须是字符串，数字1不属于字符串）
