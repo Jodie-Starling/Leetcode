@@ -5,7 +5,7 @@ class Solution:
 
         def backtracking(n, k, start):
             if len(path) == k:
-                res.append(path[:])
+                res.append(path[:])    # **创建副本，否则后面pop()执行后path改变，这里加入到res的部分也会改变**
                 return
 
             need = k - len(path)

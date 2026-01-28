@@ -9,7 +9,7 @@ class Solution:
 
             if len(path) == k:
                 if cur_sum == n:
-                    res.append(list(path))
+                    res.append(list(path)) # **创建副本**
                 return    # 已经选够k个该return了
 
             need = k - len(path)
